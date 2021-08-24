@@ -1,16 +1,6 @@
 import React from 'react'
 import { CardActions, CardContent, Button, Typography, Card, Box, TextField, Link } from '@material-ui/core/';
 
-
-const bull = (
-    <Box
-        component="span"
-        sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-        •
-    </Box>
-);
-
 const inputDiv = {
     margin: '0 auto 10px'
 }
