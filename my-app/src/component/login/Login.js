@@ -17,7 +17,7 @@ export default function Login() {
         try {
             const res = await axios({
                 method: 'get',
-                url: 'http://localhost:1111',
+                url: 'http://localhost:1111/api/login',
                 headers: {
                     // = Basic encoder  =  'Basic email:password'
                     'Authorization': `Basic ${Buffer.from(`${loginInput.email}:${loginInput.password}`).toString('base64')}`
