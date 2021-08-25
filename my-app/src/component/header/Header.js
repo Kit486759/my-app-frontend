@@ -123,7 +123,7 @@ export default function PrimarySearchAppBar() {
             onClose={handleMobileMenuClose}
         >
             <MenuItem>
-                <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+                <IconButton size="medium" aria-label="show 4 new mails" color="inherit">
                     <Badge badgeContent={4} color="error">
                         <MailIcon />
                     </Badge>
@@ -132,7 +132,7 @@ export default function PrimarySearchAppBar() {
             </MenuItem>
             <MenuItem>
                 <IconButton
-                    size="large"
+                    size="medium"
                     aria-label="show 17 new notifications"
                     color="inherit"
                 >
@@ -144,7 +144,7 @@ export default function PrimarySearchAppBar() {
             </MenuItem>
             <MenuItem onClick={handleProfileMenuOpen}>
                 <IconButton
-                    size="large"
+                    size="medium"
                     aria-label="account of current user"
                     aria-controls="primary-search-account-menu"
                     aria-haspopup="true"
@@ -162,7 +162,7 @@ export default function PrimarySearchAppBar() {
             <AppBar position="static">
                 <Toolbar>
                     <IconButton
-                        size="large"
+                        size="medium"
                         edge="start"
                         color="inherit"
                         aria-label="open drawer"
@@ -191,13 +191,13 @@ export default function PrimarySearchAppBar() {
                     </Search>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+                        <IconButton size="medium" aria-label="show 4 new mails" color="inherit">
                             <Badge badgeContent={4} color="error">
                                 <MailIcon />
                             </Badge>
                         </IconButton>
                         <IconButton
-                            size="large"
+                            size="medium"
                             aria-label="show 17 new notifications"
                             color="inherit"
                         >
@@ -206,7 +206,7 @@ export default function PrimarySearchAppBar() {
                             </Badge>
                         </IconButton>
                         <IconButton
-                            size="large"
+                            size="medium"
                             edge="end"
                             aria-label="account of current user"
                             aria-controls={menuId}
@@ -219,7 +219,7 @@ export default function PrimarySearchAppBar() {
                     </Box>
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
-                            size="large"
+                            size="medium"
                             aria-label="show more"
                             aria-controls={mobileMenuId}
                             aria-haspopup="true"
