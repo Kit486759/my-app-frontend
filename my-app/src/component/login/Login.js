@@ -16,7 +16,7 @@ export default function Login() {
         console.log(`Submitted email: ${loginInput.email}, password: ${loginInput.password}`)
         try {
             const res = await axios({
-                method: 'get',
+                method: 'post',
                 url: 'http://localhost:1111/api/login',
                 headers: {
                     // = Basic encoder  =  'Basic email:password'
@@ -48,19 +48,17 @@ export default function Login() {
                         noValidate
                         autoComplete="off"
                         action="/api/login"
-                        method="GET"
+                        method="POST"
                     >
-                        {/* <form action="/api/login" method="GET"> */}
-                            {/* <form action="/api/login" method="GET"> */}
+
                             <div style={inputDiv}><TextField onChange={(e) => setLoginInput({ ...loginInput, email: e.target.value })} id="outlined-basic email" label="Email" variant="outlined" /></div>
                             <div style={inputDiv}><TextField onChange={(e) => setLoginInput({ ...loginInput, password: e.target.value })} id="outlined-basic password" label="Password" variant="outlined" /></div>
-                            {/* <input type="submit"></input> */}
+                
                             <div style={{ display: 'flex', margin: '0 auto', justifyContent: 'space-between' }}>
-                                {/* <div onClick={() => test()} style={{ display: 'flex', margin: '0 auto', justifyContent: 'space-between' }}> */}
-                                <Button type="submit" onClick={(e) => test(e)} variant="contained">Login</Button>
+                                <Button href="/profile" type="submit" onClick={(e) => test(e)} variant="contained">Login</Button>
                                 <Link href="/signup"><Button variant="contained">Sign-up</Button></Link>
                             </div>
-                        {/* </form> */}
+                   
                     </Box>
                     <CardActions>
                         <Button size="small">Learn More</Button>
